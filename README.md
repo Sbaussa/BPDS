@@ -1,5 +1,11 @@
 # Buenas Practicas Desarrollo Sofware
 
+
+## Steven Baussa Mendoza
+
+## Universidad de la costa 
+
+## 5 semestre
 Este proyecto es una práctica sencilla desarrollada en HTML, CSS y JavaScript
 consiste en un contador que permite sumar y restar mediante dos botones
 el botón "Sumar" incrementa el número y el botón "Restar" lo disminuye
