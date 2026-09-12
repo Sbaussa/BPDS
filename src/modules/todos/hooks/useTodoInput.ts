@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import type { ChangeEvent, KeyboardEvent } from "react";
+import type { ChangeEvent, FormEvent } from "react";
 
 export function useTodoInput(onCreate: (text: string) => void) {
   const [value, setValue] = useState("");
@@ -10,11 +10,11 @@ export function useTodoInput(onCreate: (text: string) => void) {
     setValue(event.target.value);
   };
 
-  const handleKeyDown = (event: KeyboardEvent<HTMLInputElement>) => {
-    if (event.key !== "Enter") return;
+  const handleSubmit = (event: FormEvent) => {
+    event.preventDefault();
     onCreate(value);
     setValue("");
   };
 
-  return { value, handleChange, handleKeyDown };
+  return { value, handleChange, handleSubmit };
 }
