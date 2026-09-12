@@ -26,7 +26,7 @@ export function TodoTextField({
       onBlur={onBlur}
       placeholder={placeholder}
       autoFocus={autoFocus}
-      className="w-full rounded-xl border-2 border-zinc-200 bg-white px-4 py-2.5 text-sm text-zinc-900 placeholder:text-zinc-400 outline-none transition focus:border-black  focus:ring-zinc-200"
+      className="w-full rounded-lg border border-zinc-200 bg-white px-3 py-1.5 text-xs text-zinc-900 placeholder:text-zinc-400 outline-none transition focus:border-zinc-900 focus:ring-2 focus:ring-zinc-100"
     />
   );
 }
